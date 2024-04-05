@@ -1,0 +1,17 @@
+server:
+  port: 9095
+spring:
+  application:
+    name: CONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/aakash260592/employee-management-system
+          clone-on-start: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
